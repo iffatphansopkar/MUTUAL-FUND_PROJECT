@@ -1,0 +1,206 @@
+
+==================================================
+FILE: 01_fund_master.csv
+Shape: (40, 15)
+
+Missing Values:
+amfi_code             0
+fund_house            0
+scheme_name           0
+category              0
+sub_category          0
+plan                  0
+launch_date           0
+benchmark             0
+expense_ratio_pct     0
+exit_load_pct         0
+min_sip_amount        0
+min_lumpsum_amount    0
+fund_manager          0
+risk_category         0
+sebi_category_code    0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 02_nav_history.csv
+Shape: (46000, 3)
+
+Missing Values:
+amfi_code    0
+date         0
+nav          0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 03_aum_by_fund_house.csv
+Shape: (90, 5)
+
+Missing Values:
+date              0
+fund_house        0
+aum_lakh_crore    0
+aum_crore         0
+num_schemes       0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 04_monthly_sip_inflows.csv
+Shape: (48, 6)
+
+Missing Values:
+month                         0
+sip_inflow_crore              0
+active_sip_accounts_crore     0
+new_sip_accounts_lakh         0
+sip_aum_lakh_crore            0
+yoy_growth_pct               12
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 05_category_inflows.csv
+Shape: (144, 3)
+
+Missing Values:
+month               0
+category            0
+net_inflow_crore    0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 06_industry_folio_count.csv
+Shape: (21, 6)
+
+Missing Values:
+month                  0
+total_folios_crore     0
+equity_folios_crore    0
+debt_folios_crore      0
+hybrid_folios_crore    0
+others_folios_crore    0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 07_scheme_performance.csv
+Shape: (40, 19)
+
+Missing Values:
+amfi_code             0
+scheme_name           0
+fund_house            0
+category              0
+plan                  0
+return_1yr_pct        0
+return_3yr_pct        0
+return_5yr_pct        0
+benchmark_3yr_pct     0
+alpha                 0
+beta                  0
+sharpe_ratio          0
+sortino_ratio         0
+std_dev_ann_pct       0
+max_drawdown_pct      0
+aum_crore             0
+expense_ratio_pct     0
+morningstar_rating    0
+risk_grade            0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 08_investor_transactions.csv
+Shape: (32778, 13)
+
+Missing Values:
+investor_id           0
+transaction_date      0
+amfi_code             0
+transaction_type      0
+amount_inr            0
+state                 0
+city                  0
+city_tier             0
+age_group             0
+gender                0
+annual_income_lakh    0
+payment_mode          0
+kyc_status            0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 09_portfolio_holdings.csv
+Shape: (322, 8)
+
+Missing Values:
+amfi_code            0
+stock_symbol         0
+stock_name           0
+sector               0
+weight_pct           0
+market_value_cr      0
+current_price_inr    0
+portfolio_date       0
+dtype: int64
+
+Duplicate Rows: 0
+
+==================================================
+FILE: 10_benchmark_indices.csv
+Shape: (8050, 3)
+
+Missing Values:
+date           0
+index_name     0
+close_value    0
+dtype: int64
+
+Duplicate Rows: 0
+
+DATA QUALITY SUMMARY
+
+1. Dataset Review
+
+* All provided CSV files were successfully loaded.
+* Dataset structures were reviewed using shape, dtypes and head().
+
+2. Missing Values
+
+* Missing values were identified and documented where present.
+
+3. Duplicate Records
+
+* Duplicate checks were performed on all datasets.
+
+4. NAV Data Collection
+
+* Live NAV data fetched successfully from MFAPI.
+* HDFC Top 100 Direct NAV saved as CSV.
+* NAV history for SBI Bluechip, ICICI Bluechip, Nippon Large Cap, Axis Bluechip and Kotak Bluechip fetched successfully.
+
+5. Fund Master Analysis
+
+* Fund houses reviewed.
+* Categories and sub-categories explored.
+* Risk grades reviewed.
+
+6. AMFI Validation
+
+* AMFI scheme codes validated against NAV history dataset.
+* Missing codes identified where applicable.
+
+Conclusion:
+The data ingestion process was completed successfully and datasets are ready for further analysis and dashboard development.
