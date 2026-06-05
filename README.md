@@ -74,3 +74,26 @@ Performed comprehensive exploratory data analysis on mutual fund datasets and cr
 ### Outcome
 
 Successfully completed EDA with 18 visualizations, generating actionable insights into mutual fund performance, investor behavior, asset growth, and market trends.
+## Day 4 – Performance Analytics
+
+Built a quantitative performance evaluation framework for mutual funds using historical NAV and benchmark data.
+
+### Analytics Performed
+- Daily return calculation
+- CAGR computation
+- Sharpe Ratio analysis
+- Sortino Ratio analysis
+- Alpha and Beta estimation using regression
+- Maximum Drawdown calculation
+- Tracking Error analysis
+- Benchmark comparison with NIFTY50 and NIFTY100
+- Composite Fund Scorecard (0–100 ranking model)
+
+### Deliverables
+- Performance_Analytics.ipynb
+- fund_scorecard.csv
+- alpha_beta.csv
+- benchmark_comparison.png
+
+### Outcome
+Developed a risk-adjusted performance ranking system to evaluate mutual funds based on returns, volatility, benchmark-relative performance, and drawdown characteristics.
